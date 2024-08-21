@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSTE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <div>
+            <h1>Digite seu nome para saber quantos % você é <img src="gaipson.jpg" alt=""> </h1>
+            <p style="border: 1px solid red; padding: 6px;"> Digite todas as letras minúscula</p>
+            <input type="text" id="captura_nome">
+            <button type="submit" onclick="envio()">Enviar</button>
+        </div>
+
+        <table>
+            <tr>
+                <td class="cor_escura" id="zero">0% </td>
+            </tr>
+            <tr>
+                <td class="cor_clara" id="pouco">POUCO GAY </td>
+            </tr>
+
+            <tr>
+                <td class="cor_escura" id="mais_menos">MAIS OU MENOS GAY</td>
+            </tr>
+
+            <tr>
+                <td class="cor_clara" id="muito">MUITO GAY</td>
+            </tr>
+
+            <tr>
+                <td class="cor_escura" id="muito_muito">MUITO MUITO GAY</td>
+            </tr>
+        </table>
+    </main>
+
+    <script>
+
+        function envio() {
+
+            let valor_botao = document.getElementById('captura_nome').value;
+            let poucog = document.getElementById('pouco');
+            let maisoumenos = document.getElementById('mais_menos');
+            let muitog = document.getElementById('muito');
+            let muitomg = document.getElementById('muito_muito');
+            let zero = document.getElementById('zero');
+
+
+            if (valor_botao === '') {
+                alert('Digite um nome')
+            }
+            else if (valor_botao === 'felipe') {
+                muitmg.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'gabriel') {
+                poucog.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'caio') {
+                maisoumenos.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'guilherme') {
+                poucog.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'liedson') {
+                zero.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'hugo') {
+                muitog.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'radja') {
+                maisoumenos.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'higor') {
+                maisoumenos.style.backgroundColor = '#ff0000'
+            }
+            else if (valor_botao === 'joao') {
+                zero.style.backgroundColor = '#ff0000'
+            }
+
+        }
+    </script>
+</body>
+
+</html>
