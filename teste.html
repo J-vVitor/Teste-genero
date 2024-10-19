@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+</head>
+<body>
+    <script>  
+
+        let numSecreto = 4;
+        let numTentativas = 0
+
+        alert('Seja bem vindo (a) ao nosso jogo!');  
+
+        let valorDigitadoPeloUsuario 
+        
+        while(valorDigitadoPeloUsuario != numSecreto){
+
+            // VALOR DIGITADO PELO USÚARIO 
+            valorDigitadoPeloUsuario = prompt('Digite um número de 1 a 10: ');
+
+            // SE O VALOR QUE O USÚARIO DIGITOU FOR IGUAL AO NÚMERO SECRETO
+            if(valorDigitadoPeloUsuario == numSecreto){
+                alert(`Você acertou! Número de tentativas: ${numTentativas}`)
+
+            // SE O VALOR QUE O USÚARIO DIGITOU FOR MAIOR OU MENOR QUE O NÚMERO SECRETO 
+            }else{
+                if(valorDigitadoPeloUsuario > numSecreto){
+                    alert(`O número que você digitou é menor ${valorDigitadoPeloUsuario}`)
+                }else{
+                    alert(`O número que você digitou é maior ${valorDigitadoPeloUsuario}`)
+                }
+
+                numTentativas ++
+
+            }
+        }
+
+    </script>
+
+</body>
+</html>
